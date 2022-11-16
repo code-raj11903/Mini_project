@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{listings}
+
+\title{CO24497- PROGRAMMING PRACTICES}
+\title{MINI PROJECT REPORT}
+\author{Raj Gupta}
+\begin{document}
+\maketitle
+\begin{abstract}
+\normalsize
+This report contains the all information about my mini project in c language, named Second-hand bookselling and buying management system.
+\end{abstract}
+\tableofcontents
+\clearpage
+
+
+\section{Introduction}
+I made the second hand book buying and selling management system.In this project the seller can register book and user can buy these books. 
+\href{https://www.overleaf.com/user/subscription/plans}{Click Here to open the Code}.
+
+\section{Statistical Information}
+ \textbf{Starting date/time}- 11th Nov.2022/20:00\newline
+\textbf{Starting date/time}- 15th Nov.2022/20:00\newline
+\textbf{Total Time Required}- 2-3 HR a day\newline
+\textbf{Total line of code}- 396 lines\newline
+\textbf{Number of functions} -8 functions\newline
+
+
+\section{Function Description}
+The \textbf{$Developerintro()$} is to show the  developer information.\newline
+The \textbf{$mainmenu()$} is used to give choice and according to that choice the other functions are performed.\newline
+The \textbf{$SellerBook()$} is used to store the book by the sellers.\newline
+The \textbf{$BuyABook()$} is used by the buyer to buy the books.\newline
+The \textbf{$search()$} is used to search the book and the author name and matches with the books registered by the seller.\newline
+The \textbf{$BuyersDisplay()$} is used to display the books bought.\newline
+The\textbf{$SellersDisplay()$} is used to get the information about the books registered by the seller.\newline
+The\textbf{$setcolor$} is used to set change the color to desired one.\newline
+\clearpage
+\section{code in C}
+\textbf{code:} \vspace{1cm}
+\lstinputlisting[language= c]{thriftshop.c}
+\newpage
+
+\includegraphics[scale = 0.29]{Screenshot (199).png} \vspace{2cm}
+\includegraphics[scale = 0.29]{Screenshot (200).png} \vspace{2cm}
+\includegraphics[scale = 0.29]{Screenshot (201).png} \vspace{2cm}
+\includegraphics[scale = 0.29]{Screenshot (202).png} \vspace{2cm}
+\includegraphics[scale = 0.29]{Screenshot (203).png} \vspace{2cm}
+\includegraphics[scale = 0.29]{Screenshot (204).png} \vspace{2cm}
+\section{Profiling}
+\textbf{profiling code:} \vspace{1cm} \dots
+\begin{enumerate}
+\item \textbf{gcc -Wall -pg thriftshop.c -o test}
+\item \textbf{./test} \dots will create gmon.out file
+\item \textbf{gprof test gmon.out $>$ output} \dots this will convert gmon.out to readable format
+\end{enumerate}
+\vspace{1cm}
+\includegraphics[scale = 0.29]{p1.png} \vspace{1cm}
+\includegraphics[scale = 0.29]{p2.png} \vspace{1cm}
+\includegraphics[scale = 0.29]{p3.png} \vspace{1cm}
+\includegraphics[scale = 0.29]{p4.png} \vspace{1cm}
+
+\section{Debugging}
+\textbf{Debugging code:} \vspace{1cm} \dots
+\begin{enumerate}
+\item \textbf{gcc -g thriftshop.c }
+\item \textbf{gdb a.exe} \dots gdb will start 
+\item \textbf{break linenumber } 
+\item \textbf{run}
+\item \textbf{q or quit}
+\end{enumerate}
+\vspace{2cm}
+\includegraphics[scale = 0.29]{d1.png} \vspace{1cm}
+\vspace{5cm}
+\centering
+\dots \textbf{The End}\dots
+\end{document}
